@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Artistic Expressions</title>
+    <meta name="description" content="Explore our complete collection of hand-painted acrylic and watercolor artworks. Original pieces and prints available." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Artistic Expressions</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="page-title">My <span class="gradient-text">Gallery</span></h1>
+                <p class="page-subtitle">
+                    A curated collection of my hand-painted artworks, each piece reflecting passion, 
+                    emotion, and artistic expression through vibrant colors and masterful techniques.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Artworks</button>
+                <button class="filter-btn" data-filter="watercolor">Watercolor</button>
+                <button class="filter-btn" data-filter="acrylic">Acrylic</button>
+                <button class="filter-btn" data-filter="abstract">Abstract</button>
+                <button class="filter-btn" data-filter="landscape">Landscape</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid">
+        <div class="container">
+            <div class="artwork-grid">
+                <!-- Artwork 1 -->
+                <div class="artwork-card" data-category="watercolor abstract">
+                    <div class="artwork-image">
+                        <img src="src/assets/artwork-1.jpg" alt="Flowing Dreams - Abstract watercolor painting">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Flowing Dreams</h3>
+                                <p>Watercolor • 16" × 20" • 2024</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork1')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artwork 2 -->
+                <div class="artwork-card" data-category="acrylic landscape">
+                    <div class="artwork-image">
+                        <img src="src/assets/artwork-2.jpg" alt="Sunset Reverie - Acrylic landscape painting">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Sunset Reverie</h3>
+                                <p>Acrylic • 18" × 24" • 2024</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork2')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artwork 3 -->
+                <div class="artwork-card" data-category="watercolor">
+                    <div class="artwork-image">
+                        <img src="src/assets/artwork-3.jpg" alt="Garden Whispers - Watercolor floral painting">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Garden Whispers</h3>
+                                <p>Watercolor • 12" × 16" • 2023</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork3')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Artwork 4 -->
+                <div class="artwork-card" data-category="acrylic abstract">
+                    <div class="artwork-image">
+                        <img src="src/assets/artwork-4.jpg" alt="Abstract Harmony - Acrylic abstract painting">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Abstract Harmony</h3>
+                                <p>Acrylic • 20" × 24" • 2024</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork4')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional Artworks -->
+                <div class="artwork-card" data-category="watercolor landscape">
+                    <div class="artwork-image">
+                        <div class="placeholder-artwork watercolor-style">
+                            <div class="placeholder-content">
+                                <h4>Morning Mist</h4>
+                                <p>Watercolor • 14" × 18"</p>
+                            </div>
+                        </div>
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Morning Mist</h3>
+                                <p>Watercolor • 14" × 18" • 2023</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork5')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card" data-category="acrylic">
+                    <div class="artwork-image">
+                        <div class="placeholder-artwork acrylic-style">
+                            <div class="placeholder-content">
+                                <h4>Urban Energy</h4>
+                                <p>Acrylic • 16" × 20"</p>
+                            </div>
+                        </div>
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Urban Energy</h3>
+                                <p>Acrylic • 16" × 20" • 2024</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork6')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card" data-category="watercolor abstract">
+                    <div class="artwork-image">
+                        <div class="placeholder-artwork watercolor-style abstract-style">
+                            <div class="placeholder-content">
+                                <h4>Color Symphony</h4>
+                                <p>Watercolor • 18" × 24"</p>
+                            </div>
+                        </div>
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Color Symphony</h3>
+                                <p>Watercolor • 18" × 24" • 2023</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork7')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="artwork-card" data-category="acrylic landscape">
+                    <div class="artwork-image">
+                        <div class="placeholder-artwork acrylic-style landscape-style">
+                            <div class="placeholder-content">
+                                <h4>Mountain Dreams</h4>
+                                <p>Acrylic • 24" × 30"</p>
+                            </div>
+                        </div>
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Mountain Dreams</h3>
+                                <p>Acrylic • 24" × 30" • 2024</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork8')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commission CTA -->
+    <section class="commission-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Don't See What You're Looking For?</h2>
+                <p class="cta-description">
+                    I'd love to create a custom piece just for you. From concept to completion, 
+                    let's bring your vision to life with a personalized artwork.
+                </p>
+                <a href="contact.html" class="btn btn-gradient">Commission Custom Artwork</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Artwork Details -->
+    <div id="artworkModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Artistic Expressions</h3>
+                    <p class="footer-text">Creating beautiful hand-painted artworks that speak to the soul.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Custom Commissions</a></li>
+                        <li><a href="gallery.html">Original Artworks</a></li>
+                        <li><a href="contact.html">Art Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <p class="footer-text">artist@example.com</p>
+                    <p class="footer-text">+1 (555) 123-4567</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Artistic Expressions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

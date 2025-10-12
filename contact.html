@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Artistic Expressions</title>
+    <meta name="description" content="Get in touch for custom commissions, artwork purchases, or art consultation. Professional artist available for projects." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Artistic Expressions</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="gallery.html" class="nav-link">Gallery</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Contact Header -->
+    <section class="contact-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="page-title">Let's Create <span class="gradient-text">Together</span></h1>
+                <p class="page-subtitle">
+                    Whether you're interested in commissioning a piece, purchasing artwork, or simply want to connect, 
+                    I'd love to hear from you and discuss how we can bring your artistic vision to life.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form & Info -->
+    <section class="contact-main">
+        <div class="container">
+            <div class="contact-grid">
+                <!-- Contact Form -->
+                <div class="contact-form-section">
+                    <div class="form-card">
+                        <h2 class="form-title">Send Me a Message</h2>
+                        <form class="contact-form" id="contactForm">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="firstName">First Name</label>
+                                    <input type="text" id="firstName" name="firstName" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName">Last Name</label>
+                                    <input type="text" id="lastName" name="lastName" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">Email Address</label>
+                                <input type="email" id="email" name="email" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone">Phone Number (Optional)</label>
+                                <input type="tel" id="phone" name="phone">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="projectType">Project Type</label>
+                                <select id="projectType" name="projectType" required>
+                                    <option value="">Select a project type</option>
+                                    <option value="commission">Custom Commission</option>
+                                    <option value="purchase">Purchase Existing Artwork</option>
+                                    <option value="consultation">Art Consultation</option>
+                                    <option value="collaboration">Collaboration</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="budget">Budget Range (Optional)</label>
+                                <select id="budget" name="budget">
+                                    <option value="">Select budget range</option>
+                                    <option value="under-500">Under $500</option>
+                                    <option value="500-1000">$500 - $1,000</option>
+                                    <option value="1000-2500">$1,000 - $2,500</option>
+                                    <option value="2500-5000">$2,500 - $5,000</option>
+                                    <option value="over-5000">Over $5,000</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="timeline">Desired Timeline</label>
+                                <select id="timeline" name="timeline">
+                                    <option value="">Select timeline</option>
+                                    <option value="flexible">Flexible</option>
+                                    <option value="1-month">Within 1 month</option>
+                                    <option value="2-3-months">2-3 months</option>
+                                    <option value="3-6-months">3-6 months</option>
+                                    <option value="6-months-plus">6+ months</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message">Tell me about your project</label>
+                                <textarea id="message" name="message" rows="6" placeholder="Describe your vision, preferred style, size, colors, or any specific requirements..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-primary form-submit">
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="contact-info-section">
+                    <div class="contact-info">
+                        <h2 class="info-title">Get In Touch</h2>
+                        <p class="info-description">
+                            I'm always excited to discuss new projects, collaborate with fellow artists, 
+                            or simply chat about art and creativity. Don't hesitate to reach out!
+                        </p>
+
+                        <div class="contact-methods">
+                            <div class="contact-method">
+                                <div class="method-icon email-icon"></div>
+                                <div class="method-info">
+                                    <h4>Email</h4>
+                                    <p>artist@example.com</p>
+                                    <small>I typically respond within 24 hours</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon phone-icon"></div>
+                                <div class="method-info">
+                                    <h4>Phone</h4>
+                                    <p>+1 (555) 123-4567</p>
+                                    <small>Available Mon-Fri, 9 AM - 6 PM</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon location-icon"></div>
+                                <div class="method-info">
+                                    <h4>Studio Location</h4>
+                                    <p>Your City, Your State</p>
+                                    <small>Studio visits by appointment only</small>
+                                </div>
+                            </div>
+
+                            <div class="contact-method">
+                                <div class="method-icon palette-icon"></div>
+                                <div class="method-info">
+                                    <h4>Commissions</h4>
+                                    <p>Custom artwork available</p>
+                                    <small>From concept to completion</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Commission Process -->
+                        <div class="commission-process">
+                            <h3>Commission Process</h3>
+                            <div class="process-steps">
+                                <div class="process-step">
+                                    <div class="step-number">1</div>
+                                    <div class="step-content">
+                                        <h4>Initial Consultation</h4>
+                                        <p>We discuss your vision, style preferences, size, and timeline</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-step">
+                                    <div class="step-number">2</div>
+                                    <div class="step-content">
+                                        <h4>Concept & Sketches</h4>
+                                        <p>I create initial sketches and color studies for your approval</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-step">
+                                    <div class="step-number">3</div>
+                                    <div class="step-content">
+                                        <h4>Creation</h4>
+                                        <p>Your artwork comes to life with regular progress updates</p>
+                                    </div>
+                                </div>
+                                
+                                <div class="process-step">
+                                    <div class="step-number">4</div>
+                                    <div class="step-content">
+                                        <h4>Delivery</h4>
+                                        <p>Professional packaging and secure delivery to your location</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Frequently Asked <span class="gradient-text">Questions</span></h2>
+            </div>
+            
+            <div class="faq-grid">
+                <div class="faq-item">
+                    <h4>How long does a commission take?</h4>
+                    <p>Commission timelines vary based on size and complexity, typically ranging from 2-8 weeks. I'll provide a specific timeline during our initial consultation.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What's included in the commission price?</h4>
+                    <p>The price includes all materials, initial sketches, the finished artwork, professional varnishing, and secure packaging for delivery.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can I see the artwork in progress?</h4>
+                    <p>Absolutely! I provide regular progress photos throughout the creation process so you can see your artwork come to life.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Do you ship internationally?</h4>
+                    <p>Yes, I ship worldwide with professional art packaging to ensure your artwork arrives safely. Shipping costs vary by location.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>What if I'm not satisfied with the final piece?</h4>
+                    <p>Your satisfaction is my priority. I work closely with you throughout the process to ensure the final piece exceeds your expectations.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <h4>Can you recreate an existing artwork?</h4>
+                    <p>I focus on creating original, one-of-a-kind pieces. However, I can create something inspired by a particular style or theme you love.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Artistic Expressions</h3>
+                    <p class="footer-text">Creating beautiful hand-painted artworks that speak to the soul.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Custom Commissions</a></li>
+                        <li><a href="gallery.html">Original Artworks</a></li>
+                        <li><a href="contact.html">Art Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <p class="footer-text">artist@example.com</p>
+                    <p class="footer-text">+1 (555) 123-4567</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Artistic Expressions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
