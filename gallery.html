@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery - Kamalesh Art Studio</title>
+    <meta name="description" content="Explore our complete collection of hand-painted acrylic and watercolor artworks. Original pieces and prints available." />
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-logo">
+                <span class="logo-text">Kamalesh Art Studio</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="gallery.html" class="nav-link active">Gallery</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </div>
+            
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Gallery Header -->
+    <section class="gallery-header">
+        <div class="container">
+            <div class="header-content">
+                <h1 class="page-title">My <span class="gradient-text">Gallery</span></h1>
+                <p class="page-subtitle">
+                    A curated collection of my hand-painted artworks, each piece reflecting my internal passion, 
+                    emotion, and artistic expression through vibrant colors and masterful techniques.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filter Tabs -->
+    <!-- <section class="gallery-filters">
+        <div class="container">
+            <div class="filter-tabs">
+                <button class="filter-btn active" data-filter="all">All Artworks</button>
+                
+                <button class="filter-btn" data-filter="acrylic">Acrylic</button>
+                <button class="filter-btn" data-filter="abstract">Abstract</button>
+                <button class="filter-btn" data-filter="landscape">Landscape</button>
+                <button class="filter-btn" data-filter="watercolor">Watercolor</button>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- Gallery Grid -->
+    <section class="gallery-grid">
+        <div class="container">
+            <div class="artwork-grid">
+                <!-- Artwork 1 -->
+                <div class="artwork-card" data-category="acrylic landscape">
+                    <div class="artwork-image">
+                        <img src="Everything in Nothingness.jpg" style="transform: scale(1.25);" alt="Sunset Reverie - Acrylic landscape painting">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Everthing in Nothingness</h3>
+                                <p>Acrylic • 24" × 36" • 2025</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork1')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artwork 2 -->
+                 <div class="artwork-card" data-category="acrylic landscape">
+                    <div class="artwork-image">
+                        <img src="mahajagotik garbha.jpg" alt="Sunset Reverie - Acrylic landscape painting">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Mahajagatik Garbha</h3>
+                                <p>Acrylic • 11.7" × 16.5" • 2025</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork2')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artwork 3 -->
+                 <div class="artwork-card" data-category="acrylic landscape">
+                    <div class="artwork-image">
+                        <img src="Randomness.jpg" alt="Sunset Reverie - Acrylic landscape painting">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Randomness</h3>
+                                <p>Acrylic • 11.7" × 16.5" • 2024</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork3')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artwork 4 -->
+                 <div class="artwork-card" data-category="acrylic landscape">
+                    <div class="artwork-image">
+                        <img src="Into the woods.jpg" alt="Sunset Reverie - Acrylic landscape painting">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Into the woods</h3>
+                                <p>Acrylic • 11.7" × 16.5" • 2024</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork4')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artwork 5 -->
+                 <div class="artwork-card" data-category="acrylic landscape">
+                    <div class="artwork-image">
+                        <img src="Jharapata.jpg" alt="Sunset Reverie - Acrylic landscape painting">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Jharapata</h3>
+                                <p>Acrylic • 11.7" × 16.5" • 2024</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork5')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artwork 6 -->
+                 <div class="artwork-card" data-category="acrylic landscape">
+                    <div class="artwork-image">
+                        <img src="Mystic sunset.jpg" alt="Sunset Reverie - Acrylic landscape painting">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Mystic sunset</h3>
+                                <p>Acrylic • 11.7" × 16.5" • 2024</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork6')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artwork 7 -->
+                <div class="artwork-card" data-category="acrylic abstract">
+                    <div class="artwork-image">
+                        <img src="Lone.jpg" alt="Abstract Harmony - Acrylic abstract painting">
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Lone</h3>
+                                <p>Acrylic • 11.7" × 16.5" • 2024</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork7')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+
+               <!-- Artwork 8 -->
+                <div class="artwork-card" data-category="acrylic">
+                    <div class="artwork-image">
+                        <img src="Love on fire.jpg" alt="Abstract Harmony - Acrylic abstract painting">
+                        <div class="placeholder-artwork acrylic-style">
+                            <div class="placeholder-content">
+                                <h4>Love on Fire</h4>
+                                <p>Acrylic • 11.7" × 16.5"</p>
+                            </div>
+                        </div>
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Love on Fire</h3>
+                                <p>White pen • 11.7" × 16.5" • 2024</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork8')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+                <!-- Artwork 9 -->
+                <div class="artwork-card" data-category="acrylic landscape">
+                    <div class="artwork-image">
+                        <img src="Premchakshu.jpg" alt="Abstract Harmony - Acrylic abstract painting">
+                        <div class="placeholder-artwork acrylic-style landscape-style">
+                            <div class="placeholder-content">
+                                <h4>Prem Chakshu</h4>
+                                <p>Pen • 11.7" × 16.5"</p>
+                            </div>
+                        </div>
+                        <div class="artwork-overlay">
+                            <div class="artwork-info">
+                                <h3>Prem Chakshu</h3>
+                                <p>Pen • 11.7" × 16.5" • 2025</p>
+                            </div>
+                            <button class="view-btn" onclick="openModal('artwork9')">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Commission CTA -->
+    <section class="commission-cta">
+        <div class="container">
+            <div class="cta-content">
+                <h2 class="cta-title">Don't See What You're Looking For?</h2>
+                <p class="cta-description">
+                    I'd love to create a custom piece just for you. From concept to completion, 
+                    let's bring your vision to life with a personalized artwork.
+                </p>
+                <a href="contact.html" class="btn btn-gradient">Custom Artwork</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Artwork Details -->
+    <div id="artworkModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="modalBody">
+                <!-- Modal content will be dynamically inserted here -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3 class="footer-title">Kamalesh Art Studio</h3>
+                    <p class="footer-text">Creating beautiful hand-painted artworks that speak to the soul.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Services</h4>
+                    <ul class="footer-links">
+                        <li><a href="contact.html">Custom Commissions</a></li>
+                        <li><a href="gallery.html">Original Artworks</a></li>
+                        <li><a href="contact.html">Art Consultation</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4 class="footer-heading">Connect</h4>
+                    <p class="footer-text" >kamalesh.laha@gmail.com</p>
+                    <p class="footer-text">+91 8001635425</p>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 Kamalesh Laha. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
